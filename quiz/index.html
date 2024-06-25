@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Office Hours Submission</title>
+    <link rel="stylesheet" type="text/css" href="resume.css">
+    <meta name=viewport content='width=700'>
+</head>
+<script src="js/addAction.js" type="text/javascript"></script>
+<script type="text/javascript">
+  function email() {
+    <%
+      Set myMail = CreateObject("CDO.Message")
+      myMail.Subject = "Sending email with CDO"
+      myMail.From = "rjckivel@gmail.com"
+      myMail.To = "Reopolitan@msn.com"
+      myMail.TextBody = "This is a message."
+      myMail.Send
+      set myMail = nothing
+     %>
+  }
+</script>
+<body>
+    <div id="emailContent">
+        <form id="basicInfo" method="POST">
+            <label>Name:</label>           <input id="Name" type="text" autocorrect="off" autocapitalize="words"> <br>
+            <label>Character:</label>      <input id="Character" type="text" autocorrect="off" autocapitalize="words"> <br>
+            <label>Clan:</label>           <input id="Clan" type="text" autocorrect="off" autocapitalize="words"> <br>
+            <label>Covenant:</label>       <input id="Covenant" type="text" autocorrect="off" autocapitalize="words"> <br>
+            <label>Haven:</label>          <input id="Haven" type="text"> <br>
+            <label>Humanity:</label>       <input id="Humanity" type="number"> <br>
+            <label>Transportation:</label> <input id="Transportation" type="text"> <br>
+            <label>Respond To:</label>     <input id="Respond To" type="email" autocorrect="off" autocapitalize="words"> <br>
+        </form>
+        <div id="actions"></div>
+    </div>
+    <input type="button" value="Add Another Action" name="addActionButton" onclick="addAction('actions');"> <br> <br>
+    <input type="text" placeholder="Add Notes Here" name="Notes"> <br>
+    <input type="button" value="Submit" name="submitButton" onclick="email();">
+</body>
+</html>

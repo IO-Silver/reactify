@@ -1,0 +1,27 @@
+body {
+    min-width: 560px;
+    font:"Helvetica";
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: left;
+}
+
+input {
+    max-width: 100%;
+    font: "Arial";
+    display: inline-block;
+    float: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+#basicInfo {
+  font: "Arial";
+}

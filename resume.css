@@ -1,0 +1,119 @@
+/* Set all font to Ubuntu Mono */
+body {
+    font-family: 'Ubuntu Mono';
+    color: #F8F8F2;
+    background-color: #272822;
+    margin: 30px 60px; 
+    min-width: 560px;
+}
+
+.Section1 {
+    text-align: center;
+}
+
+.JobTitle {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+    color: #F92672;
+}
+
+.JobDetails {
+    font-weight: italic;
+    font-size: 12pt;
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+    color: #75715E;
+}
+
+.Date {
+    font-weight: normal;
+    font-size: 12pt;
+    float: right;
+    color: #AE81FF;
+}
+
+.PersonalProject {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    color: #F92672;
+}
+
+/* My name, at the top of the page */
+#myName {
+    font-weight: bold;
+    font-size: 26pt;
+    margin-bottom: 0pt;
+    color: #A6E22E;
+}
+
+/* The blinking cursor, and it's animations */
+.typed-cursor{
+    opacity: 1;
+    color: #FFFFFF;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+/* Personal information at the top of the page*/
+#personalInfo {
+    margin-top: 0px;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #66D9EF;
+}
+
+#degree {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0pt;
+    color: #F92672;
+}
+
+#degreeInfo {
+    margin-top: 0px;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #75715E;
+}
+
+h3 {
+    margin-bottom: 0pt;
+    font-size: 16pt;
+    color: #A6E22E;
+}
+
+hr {
+    size: 2;
+    width: 100%;
+}
+
+ul {
+    margin-top: 0px;
+    list-style-type: disc;
+}
+
+li {
+    font-size: 12pt;
+}

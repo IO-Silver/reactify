@@ -10,6 +10,9 @@ class App extends React.Component {
       <div className="App">
         <PersonalInfo />
         <Skills />
+        <Career />
+        <Education />
+        <PersonalLife />
       </div>
     );
   }
